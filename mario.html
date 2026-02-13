@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Mario Valentine's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body tabindex="0">
+    <!-- Mario Game Section -->
+    <div id="gameSection" class="active">
+        <wall p="3"></wall>
+        <wall p="5"></wall>
+        <coin p="10"></coin>
+        <wall p="11"></wall>
+        <wall p="12"></wall>
+        <wall p="13"></wall>
+        <coin p="14"></coin>
+        <coin p="17"></coin>
+        <coin p="21"></coin>
+        <wall p="25"></wall>
+        <coin p="26"></coin>
+        <wall p="27"></wall>
+        <wall p="28"></wall>
+        <wall p="29"></wall>
+        <wall p="30"></wall>
+        <wall p="31"></wall>
+    </div>
+
+    <!-- Success Page (Hidden by default) -->
+    <div id="successPage" class="success-page" style="display: none;">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="t">
+            <image href="b1.jpeg" width="200" height="200" preserveAspectRatio="xMidYMid slice"
+                clip-path="url(#blobClip)" />
+            <clipPath id="blobClip">
+                <path
+                    d="M43.1,-68.5C56.2,-58.6,67.5,-47.3,72.3,-33.9C77.2,-20.5,75.5,-4.9,74.2,11.3C72.9,27.6,71.9,44.5,63.8,57.2C55.7,69.8,40.6,78.2,25.5,79.2C10.4,80.1,-4.7,73.6,-20.9,69.6C-37.1,65.5,-54.5,63.9,-66,54.8C-77.5,45.8,-83.2,29.3,-85.7,12.3C-88.3,-4.8,-87.7,-22.3,-79.6,-34.8C-71.5,-47.3,-55.8,-54.9,-41.3,-64.2C-26.7,-73.6,-13.4,-84.7,0.8,-86C15,-87.2,29.9,-78.5,43.1,-68.5Z"
+                    transform="translate(100 100)" />
+            </clipPath>
+
+            <path class="blob"
+                d="M43.1,-68.5C56.2,-58.6,67.5,-47.3,72.3,-33.9C77.2,-20.5,75.5,-4.9,74.2,11.3C72.9,27.6,71.9,44.5,63.8,57.2C55.7,69.8,40.6,78.2,25.5,79.2C10.4,80.1,-4.7,73.6,-20.9,69.6C-37.1,65.5,-54.5,63.9,-66,54.8C-77.5,45.8,-83.2,29.3,-85.7,12.3C-88.3,-4.8,-87.7,-22.3,-79.6,-34.8C-71.5,-47.3,-55.8,-54.9,-41.3,-64.2C-26.7,-73.6,-13.4,-84.7,0.8,-86C15,-87.2,29.9,-78.5,43.1,-68.5Z"
+                transform="translate(100 100)" fill="url(#imgFill)" />
+            <path id="text"
+                d="M43.1,-68.5C56.2,-58.6,67.5,-47.3,72.3,-33.9C77.2,-20.5,75.5,-4.9,74.2,11.3C72.9,27.6,71.9,44.5,63.8,57.2C55.7,69.8,40.6,78.2,25.5,79.2C10.4,80.1,-4.7,73.6,-20.9,69.6C-37.1,65.5,-54.5,63.9,-66,54.8C-77.5,45.8,-83.2,29.3,-85.7,12.3C-88.3,-4.8,-87.7,-22.3,-79.6,-34.8C-71.5,-47.3,-55.8,-54.9,-41.3,-64.2C-26.7,-73.6,-13.4,-84.7,0.8,-86C15,-87.2,29.9,-78.5,43.1,-68.5Z"
+                transform="translate(100 100)" fill="none" stroke="none" pathLength="100" />
+
+            <text class="text-content">
+                <textPath href="#text" startOffset="0%">💖 MADE WITH LOVE 💖 MADE WITH LOVE 💖 MADE WITH LOVE 💖 MADE WITH LOVE
+                    <animate attributeName="startOffset" from="0%" to "100%" dur="15s" repeatCount="indefinite" />
+                </textPath>
+                <textPath href="#text" startOffset="100%">💖 MADE WITH LOVE 💖 MADE WITH LOVE 💖 MADE WITH LOVE 💖 MADE WITH LOVE
+                    <animate attributeName="startOffset" from="-100%" to "0%" dur="15s" repeatCount="indefinite" />
+                </textPath>
+            </text>
+        </svg>
+
+
+        <!-- Scattered Text Elements -->
+        <p class="scattered-text text-1">dumb si ladki</p>
+        <p class="scattered-text text-2">I am your doggie</p>
+        <p class="scattered-text text-3">irritate krti h</p>
+        <a href="#third-part" class="scattered-text text-4">Chhoti height</a>
+    </div>
+
+    <!-- Password Modal -->
+    <div id="passwordModal" class="modal-overlay">
+        <div class="modal-container">
+            <h2>🎮 Secret Level!</h2>
+            <p>Enter the password to continue:</p>
+            <input type="text" id="passwordInput" placeholder="Enter password..." autocomplete="off">
+            <button id="submitPassword">Submit</button>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+    </div>
+
+
+    <!-- 3D Art Gallery Section (Hidden Initially) -->
+    <div id="artGallery" style="display: none;">
+        <div class="logo">GALLERIE D'LOVER</div>
+        <a href="index.html" class="continue-button">Continue →</a>
+
+        <div id="canvas-container"></div>
+
+        <div id="ui-layer">
+
+            <div class="slide-content" id="slide-0">
+                <span class="catalogue-number">01 / Collection</span>
+                <h1>PEDOPHILE</h1>
+                <div class="description">
+                    MUJHE TO BACHI BHT PSND H YE
+                </div>
+                <div class="meta-grid">
+                    <span class="meta-label">Artist</span> <span class="meta-value">IDK</span>
+                </div>
+            </div>
+
+            <div class="slide-content" id="slide-1">
+                <span class="catalogue-number">02 / Collection</span>
+                <h1>SUNDAR LADKI</h1>
+                <div class="description">
+                    CHOR H SALI MERA DIL CHURA LIYA
+                </div>
+                <div class="meta-grid">
+                    <span class="meta-label">Artist</span> <span class="meta-value">MALKIN</span>
+                </div>
+            </div>
+
+            <div class="slide-content" id="slide-2">
+                <span class="catalogue-number">03 / Collection</span>
+                <h1>CHUDAIL</h1>
+                <div class="description">
+                    KHATARNAK CHUDAIL PEECHHE PADH GYI
+                </div>
+                <div class="meta-grid">
+                    <span class="meta-label">Artist</span> <span class="meta-value">CHUDAIL</span>
+                </div>
+            </div>
+
+            <div class="slide-content" id="slide-3">
+                <span class="catalogue-number">04 / Collection</span>
+                <h1>YE TO  <br> ME HUU</h1>
+                <div class="description">
+                    KITTA ACHHA DIKHTA HU ME!!!!
+                </div>
+                <div class="meta-grid">
+                    <span class="meta-label">Artist</span> <span class="meta-value">camera-man ji</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="scroll-hint">Scroll to explore</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
